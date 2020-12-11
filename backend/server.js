@@ -5,7 +5,7 @@ const products = require('./data/products');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('API is running');
+  res.send('API is running...');
 });
 
 // All Products
@@ -20,4 +20,3 @@ app.get('/api/products/:id', (req, res) => {
 });
 
 app.listen(5000, console.log('Server running on Port 5000'));
- 
